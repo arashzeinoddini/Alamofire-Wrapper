@@ -20,6 +20,9 @@
 		F158712A286309E400B9CD22 /* Alamofire_WrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1587129286309E400B9CD22 /* Alamofire_WrapperTests.swift */; };
 		F1587134286309E400B9CD22 /* Alamofire_WrapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1587133286309E400B9CD22 /* Alamofire_WrapperUITests.swift */; };
 		F1587136286309E400B9CD22 /* Alamofire_WrapperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1587135286309E400B9CD22 /* Alamofire_WrapperUITestsLaunchTests.swift */; };
+		F19486E9286312FC00015535 /* BaseRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486E8286312FC00015535 /* BaseRequestManager.swift */; };
+		F19486EB28632A8700015535 /* Servers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486EA28632A8700015535 /* Servers.swift */; };
+		F19486EF2863302200015535 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486EE2863302200015535 /* URLExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		F158712F286309E400B9CD22 /* Alamofire WrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Alamofire WrapperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1587133286309E400B9CD22 /* Alamofire_WrapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_WrapperUITests.swift; sourceTree = "<group>"; };
 		F1587135286309E400B9CD22 /* Alamofire_WrapperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alamofire_WrapperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F19486E8286312FC00015535 /* BaseRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestManager.swift; sourceTree = "<group>"; };
+		F19486EA28632A8700015535 /* Servers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servers.swift; sourceTree = "<group>"; };
+		F19486EE2863302200015535 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
 		F33D15E12B05A2592B2CE7BC /* Pods-Alamofire WrapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire WrapperTests.debug.xcconfig"; path = "Target Support Files/Pods-Alamofire WrapperTests/Pods-Alamofire WrapperTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +119,6 @@
 				F33D15E12B05A2592B2CE7BC /* Pods-Alamofire WrapperTests.debug.xcconfig */,
 				623A666F05ED2136338F7C75 /* Pods-Alamofire WrapperTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -142,6 +147,9 @@
 		F158710E286309E400B9CD22 /* Alamofire Wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				F19486ED2863301000015535 /* Extensions */,
+				F19486E62863125B00015535 /* Networking */,
+				F19486E028630C1A00015535 /* Shared */,
 				F158710F286309E400B9CD22 /* AppDelegate.swift */,
 				F1587111286309E400B9CD22 /* SceneDelegate.swift */,
 				F1587113286309E400B9CD22 /* ViewController.swift */,
@@ -169,6 +177,46 @@
 				F1587135286309E400B9CD22 /* Alamofire_WrapperUITestsLaunchTests.swift */,
 			);
 			path = "Alamofire WrapperUITests";
+			sourceTree = "<group>";
+		};
+		F19486E028630C1A00015535 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F19486E128630C2200015535 /* Common */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F19486E128630C2200015535 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F19486EA28632A8700015535 /* Servers.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F19486E62863125B00015535 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F19486E72863126400015535 /* Shared */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F19486E72863126400015535 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F19486E8286312FC00015535 /* BaseRequestManager.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F19486ED2863301000015535 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F19486EE2863302200015535 /* URLExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,8 +459,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1587114286309E400B9CD22 /* ViewController.swift in Sources */,
+				F19486EB28632A8700015535 /* Servers.swift in Sources */,
 				F1587110286309E400B9CD22 /* AppDelegate.swift in Sources */,
 				F158711A286309E400B9CD22 /* Alamofire_Wrapper.xcdatamodeld in Sources */,
+				F19486EF2863302200015535 /* URLExtension.swift in Sources */,
+				F19486E9286312FC00015535 /* BaseRequestManager.swift in Sources */,
 				F1587112286309E400B9CD22 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
