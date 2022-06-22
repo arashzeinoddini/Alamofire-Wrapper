@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         
-//        let url = URL(server: .defined(.flickrBaseUrl), method: "")
-        
+        // test url
+        let url = URL(server: .defined(.flickrBaseUrl), method: "flickr.photos.getRecent", apiKey: Constants.flickrApiKey, format: "json", perPage: 20, page: 1)
         
     }
 

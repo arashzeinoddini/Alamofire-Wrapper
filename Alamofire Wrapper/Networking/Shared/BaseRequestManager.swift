@@ -16,9 +16,7 @@ class BaseRequestManager {
     }
 
     static let URLError = Error(errorCode: 1, errorDescription: "Incorrect URL")
-
     typealias NetworkingError = (_ error : Error) -> Void
-        
     typealias NetworkResponse = (_ data : AFDataResponse<Data?>) -> Void
         
     static func request(url: URL?, method: HTTPMethod, parameters: [String: Any]?, networkingError: @escaping NetworkingError, networkResponse : @escaping NetworkResponse) {

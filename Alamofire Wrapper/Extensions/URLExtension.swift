@@ -8,6 +8,18 @@
 import Foundation
 
 extension URL {
+    
+    // Flickr initialize
+    init?(server: ServerType, method : String , apiKey: String, format: String, perPage: Int, page: Int) {
+        let urlStr = server.value + "method=" + method + "&api_key=" + apiKey + "&format=" + format + "&per_page=" + String(perPage) + "&page=" + String(page)
+        guard let url = URL(string: urlStr) else {
+            print("Invalid URL : \(urlStr)")
+            return nil
+        }
+        self = url
+    }
+    
+    // Common initialize
     init?(server: ServerType, method : String = "") {
         let urlStr = server.value + method
         guard let url = URL(string: urlStr) else {
@@ -16,4 +28,5 @@ extension URL {
         }
         self = url
     }
+    
 }

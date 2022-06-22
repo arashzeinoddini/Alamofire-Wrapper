@@ -23,6 +23,7 @@
 		F19486E9286312FC00015535 /* BaseRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486E8286312FC00015535 /* BaseRequestManager.swift */; };
 		F19486EB28632A8700015535 /* Servers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486EA28632A8700015535 /* Servers.swift */; };
 		F19486EF2863302200015535 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486EE2863302200015535 /* URLExtension.swift */; };
+		F19486F12863444500015535 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19486F02863444500015535 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		F19486E8286312FC00015535 /* BaseRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestManager.swift; sourceTree = "<group>"; };
 		F19486EA28632A8700015535 /* Servers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Servers.swift; sourceTree = "<group>"; };
 		F19486EE2863302200015535 /* URLExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		F19486F02863444500015535 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		F33D15E12B05A2592B2CE7BC /* Pods-Alamofire WrapperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire WrapperTests.debug.xcconfig"; path = "Target Support Files/Pods-Alamofire WrapperTests/Pods-Alamofire WrapperTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				F19486EA28632A8700015535 /* Servers.swift */,
+				F19486F02863444500015535 /* Constants.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				F19486EF2863302200015535 /* URLExtension.swift in Sources */,
 				F19486E9286312FC00015535 /* BaseRequestManager.swift in Sources */,
 				F1587112286309E400B9CD22 /* SceneDelegate.swift in Sources */,
+				F19486F12863444500015535 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
