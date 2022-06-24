@@ -7,6 +7,7 @@ target 'Alamofire Wrapper' do
 
   # Pods for Alamofire Wrapper
   pod 'Alamofire'
+  pod 'SwiftyJSON'
 
   target 'Alamofire WrapperTests' do
     inherit! :search_paths

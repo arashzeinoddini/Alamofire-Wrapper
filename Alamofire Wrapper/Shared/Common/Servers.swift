@@ -9,6 +9,7 @@ import Foundation
 
 enum Servers: String {
     case flickrBaseUrl = "https://www.flickr.com/services/rest/?"
+    case flickrImageBaseUrl = "https://farm%@.staticflickr.com/"
 }
 
 enum ServerType {

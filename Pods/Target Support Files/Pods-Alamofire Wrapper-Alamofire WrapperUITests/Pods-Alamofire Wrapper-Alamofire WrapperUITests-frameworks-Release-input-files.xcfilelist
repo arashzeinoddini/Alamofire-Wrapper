@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Alamofire Wrapper-Alamofire WrapperUITests/Pods-Alamofire Wrapper-Alamofire WrapperUITests-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

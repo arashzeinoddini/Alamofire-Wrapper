@@ -16,17 +16,21 @@ class BaseRequestManager {
     }
 
     static let URLError = Error(errorCode: 1, errorDescription: "Incorrect URL")
+    static let nilItemsError = Error(errorCode: 2, errorDescription: "Nil Items")
+    static let parseError = Error(errorCode: 3, errorDescription: "Parse Error")
+    static let failedResultError = Error(errorCode: 4, errorDescription: "Failed Result Error")
+
     typealias NetworkingError = (_ error : Error) -> Void
     typealias NetworkResponse = (_ data : AFDataResponse<Data?>) -> Void
         
-    static func request(url: URL?, method: HTTPMethod, parameters: [String: Any]?, networkingError: @escaping NetworkingError, networkResponse : @escaping NetworkResponse) {
+    static func request(url: URL?, method: HTTPMethod, parameters: [String: Any]? = nil, networkingError: @escaping NetworkingError, networkResponse : @escaping NetworkResponse) {
         guard let url = url else {
             networkingError(URLError)
             return
         }
         let headers = configureCurrentSession(method)
-        AF.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).response { dataResponse in
-            networkResponse(dataResponse)
+        AF.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: headers).response { response in
+            networkResponse(response)
         }
     }
     

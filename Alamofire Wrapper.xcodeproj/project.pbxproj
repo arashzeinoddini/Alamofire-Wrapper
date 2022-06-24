@@ -10,6 +10,8 @@
 		2B6F7C736396B25BB2F29182 /* Pods_Alamofire_Wrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7A8175310E2BC5D96681A0 /* Pods_Alamofire_Wrapper.framework */; };
 		4C5E72DA1015F64CF324C344 /* Pods_Alamofire_Wrapper_Alamofire_WrapperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C703D091FED26DADC2B4698A /* Pods_Alamofire_Wrapper_Alamofire_WrapperUITests.framework */; };
 		4DF631BE91AB1C3733EEA533 /* Pods_Alamofire_WrapperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2974BF3FF931B8A4C98BAF6C /* Pods_Alamofire_WrapperTests.framework */; };
+		F1106AE92865E41800D55F50 /* SearchPhotoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1106AE82865E41800D55F50 /* SearchPhotoRequest.swift */; };
+		F1106AEC2865FBF500D55F50 /* PhotosResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1106AEB2865FBF500D55F50 /* PhotosResponseModel.swift */; };
 		F1587110286309E400B9CD22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F158710F286309E400B9CD22 /* AppDelegate.swift */; };
 		F1587112286309E400B9CD22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1587111286309E400B9CD22 /* SceneDelegate.swift */; };
 		F1587114286309E400B9CD22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1587113286309E400B9CD22 /* ViewController.swift */; };
@@ -52,6 +54,8 @@
 		AD7A8175310E2BC5D96681A0 /* Pods_Alamofire_Wrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Wrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C703D091FED26DADC2B4698A /* Pods_Alamofire_Wrapper_Alamofire_WrapperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Wrapper_Alamofire_WrapperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D3696DFC434361457B12B2 /* Pods-Alamofire Wrapper-Alamofire WrapperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire Wrapper-Alamofire WrapperUITests.release.xcconfig"; path = "Target Support Files/Pods-Alamofire Wrapper-Alamofire WrapperUITests/Pods-Alamofire Wrapper-Alamofire WrapperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1106AE82865E41800D55F50 /* SearchPhotoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPhotoRequest.swift; sourceTree = "<group>"; };
+		F1106AEB2865FBF500D55F50 /* PhotosResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponseModel.swift; sourceTree = "<group>"; };
 		F158710C286309E400B9CD22 /* Alamofire Wrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Alamofire Wrapper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F158710F286309E400B9CD22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F1587111286309E400B9CD22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -124,6 +128,22 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F1106AE72865E3DD00D55F50 /* SearchPhotoRequest */ = {
+			isa = PBXGroup;
+			children = (
+				F1106AE82865E41800D55F50 /* SearchPhotoRequest.swift */,
+			);
+			path = SearchPhotoRequest;
+			sourceTree = "<group>";
+		};
+		F1106AEA2865FBE100D55F50 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1106AEB2865FBF500D55F50 /* PhotosResponseModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F1587103286309E400B9CD22 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +169,7 @@
 		F158710E286309E400B9CD22 /* Alamofire Wrapper */ = {
 			isa = PBXGroup;
 			children = (
+				F1106AEA2865FBE100D55F50 /* Model */,
 				F19486ED2863301000015535 /* Extensions */,
 				F19486E62863125B00015535 /* Networking */,
 				F19486E028630C1A00015535 /* Shared */,
@@ -201,6 +222,7 @@
 		F19486E62863125B00015535 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				F1106AE72865E3DD00D55F50 /* SearchPhotoRequest */,
 				F19486E72863126400015535 /* Shared */,
 			);
 			path = Networking;
@@ -469,6 +491,8 @@
 				F19486E9286312FC00015535 /* BaseRequestManager.swift in Sources */,
 				F1587112286309E400B9CD22 /* SceneDelegate.swift in Sources */,
 				F19486F12863444500015535 /* Constants.swift in Sources */,
+				F1106AE92865E41800D55F50 /* SearchPhotoRequest.swift in Sources */,
+				F1106AEC2865FBF500D55F50 /* PhotosResponseModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

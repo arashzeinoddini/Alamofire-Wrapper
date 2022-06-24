@@ -13,10 +13,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        
-        // test url
-        let url = URL(server: .defined(.flickrBaseUrl), method: "flickr.photos.getRecent", apiKey: Constants.flickrApiKey, format: "json", perPage: 20, page: 1)
-        
+        // Test Api
+        SearchPhotoRequest.request(searchTerm: "Flower") { error, photos in
+            print(photos?.photo?.first?.title)
+            print(photos?.photo?.first?.flickrImageURL())
+        }
     }
 
 }
